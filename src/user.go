@@ -5,7 +5,7 @@ import "fmt"
 type UnauthorisedError struct{}
 
 func (e *UnauthorisedError) Error() string {
-	return "you are unathorised"
+	return "you are not authorised"
 }
 
 type TokenTooLongError struct {
