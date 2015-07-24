@@ -13,7 +13,7 @@ type TokenTooLongError struct {
 }
 
 func (e *TokenTooLongError) Error() string {
-	return fmt.Sprintf("token too long - they should be max 16 characters and this one is %i characters", e.length)
+	return fmt.Sprintf("token too long - they should be max 16 characters and this one is %d characters", e.length)
 }
 
 type User struct {

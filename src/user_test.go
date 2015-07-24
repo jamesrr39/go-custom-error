@@ -20,6 +20,7 @@ func TestAuthenticateWithTooLongToken(t *testing.T) {
 	assert.Error(t, err, "invalid token should return an error")
 	switch err.(type) {
 	case *TokenTooLongError:
+		assert.Equal(t, "token too long - they should be max 16 characters and this one is 26 characters", err.Error(), "token was too long")
 		// this is the one we want
 	default:
 		// all other error types are caught here, so fail if it gets to here
