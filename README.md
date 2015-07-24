@@ -1,6 +1,6 @@
 ## Custom error throwing in Golang
 
-demo to show how to throw and detect different kinds of errors in Go
+simple demo to show how to detect, return and test for different kinds of errors in Go
 
 this example uses the `make` build tool to build/run
 
